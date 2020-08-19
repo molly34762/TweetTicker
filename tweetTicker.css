@@ -1,0 +1,86 @@
+body {
+	height:100%;
+    width:100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+#title {
+    font-size: 4rem;
+    color: white;
+    margin-top: 30px;
+}
+
+#tweetDisplay {
+    background-color: rgba(226, 226, 226, 0.568);
+    margin-top:3px;
+    border-radius: 10px;
+    box-shadow: 5px 10px #88888833;
+}
+
+.tweetUser {
+    background-color: white;
+    border-radius: 10px;
+    margin: 15px 0px 15px 0px;
+}
+
+.tweetText {
+    margin: 0px 0px 0px 2px;
+    font-size: 1.2rem;
+    padding: 2px 10px 10px 10px;
+}
+
+.tweetPicture {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 10px 10px 5px 10px;
+}
+
+.tweetUserName {
+    font-weight: bold;
+    color:rgb(85, 85, 85);
+    margin-top: 30px;
+    font-size: 1.1rem;
+}
+
+
+/*heart icon*/
+.heart {
+    cursor: pointer;
+    margin-top: 20px;
+    height: 120px;
+    width: 120px;
+    background-image:url( 'https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
+    background-position: left;
+    background-repeat:no-repeat;
+    background-size:2900%;
+}
+
+.heart:hover {
+background-position:right;
+}
+
+.is_animating {
+animation: heart-burst 3s steps(28) 1;
+}
+
+@keyframes heart-burst {
+from {background-position:left;}
+to { background-position:right;}
+}
+
